@@ -15,6 +15,9 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
@@ -24,9 +27,79 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/app.js"></script>
+<div class="container">
+  <div class="logo-section">
+    <img src="img/Logo.png">
+    <h1>For Individuals</h1>
+    <p>Inspiring wholesome harmony for the mind, body and spirit, for everyone, eveywhere</p>
+  </div>
 
+  <div class="form-section">
+    <form class="forms">
+      <div class="name-wrapper">
+        <div class="first-name-section">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Jane" name="email" required>  
+        </div>
+
+        <div class="last-name-section">
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="Doe" name="lname" required>
+        </div>
+       </div>
+
+
+       <div class="gender-dates-wrapper">
+        <div class="gender-section">
+       <label for="gender">Select Gender</label>
+       <select name="gender" required>
+           <option value="" disabled selected hidden>Select Gender</option>
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+       </select>
+       </div>
+       <div class="dob-section">
+       <label for="date">Date Of Birth</label>
+       <input type="date" placeholder="Please Select D.O.B" name="date" required>
+      </div>
+      </div>
+
+      <div class="measurements-wrapper">
+        <div class="weight-section">
+            <label for="weight">Weight (KG)</label>
+            <input type="text" id="weigh" placeholder="Enter Weight" name="weight" required>  
+        </div>
+
+        <div class="height-section">
+            <label for="height">Height (CM)</label>
+            <input type="text" placeholder="Enter height here.." name="height" required>
+        </div>
+       </div>
+
+       <div class="activity-section">
+          <label for="activity">Activity Level</label>
+          <select name="activity">
+            <option value="">Select here</option>
+          </select>
+       </div>
+
+       <div class="password-section">
+        <label for="activity">Password</label>
+        <input type="password">
+     </div>
+
+     <div class="register-button">
+        <button>Register</button>
+     </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <p>By clicking Register, you agree to our <span><a href="#">Terms of Use</a></span> and our <span><a href="">Privacy Policy</a></span></p>
+  </footer>
+</div>
 </body>
 
 </html>

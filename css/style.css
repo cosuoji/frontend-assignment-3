@@ -245,3 +245,108 @@ textarea {
   }
 }
 
+
+/***General Styles****/
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(247,253,252);
+  
+}
+
+.container{
+  display: flex; 
+  flex-direction: column;
+}
+
+/**Logo Section Styles ***/
+.logo-section{
+  padding: 30px;
+}
+
+
+.logo-section p{
+  font-weight: 300;
+  
+}
+
+/**Footer Section **/
+footer{
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+footer p{
+  font-weight:bold;
+}
+
+footer span a{
+  color: rgb(46,196,182);
+  text-decoration: underline;
+}
+
+
+/***Form Styling****/
+
+.first-name-section, .last-name-section, .height-section,.weight-section,
+.activity-section, .password-section, .gender-section, .dob-section
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+label{
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.form-section{
+  padding: 30px;
+}
+
+form{
+  background-color: white;
+  border-radius: 0.5rem;
+box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+
+input, select{
+  width: 24.58333rem;
+height: 4rem;
+flex-shrink: 0;
+border: 1px solid rgba(0, 0, 0, .5);
+text-indent: 10px;
+}
+
+button{
+  background-color: rgb(46,196,182);
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.register-button{
+ display: flex;
+ align-items: center;
+ padding: 30px;
+ width: 24.58333rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url('/frontend-assignment-3/img/u_a_calendar-alt.png');
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+/*Media Query for Desktop Designs ***/
