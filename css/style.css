@@ -256,6 +256,7 @@ body{
 .container{
   display: flex; 
   flex-direction: column;
+  justify-content: center;
 }
 
 /**Logo Section Styles ***/
@@ -358,7 +359,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .container{
     flex-direction: row;
     justify-content: space-around;
-    height: 900px;
+    height: 60rem;
+
   }
 
   .two{
@@ -370,10 +372,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
  
-
-
-
-
  
   /**form styles***/
 
@@ -381,8 +379,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: row;
   }
-
-
 
 .activity-section select, .password-section input, .register-button{
   width: 52rem;
@@ -402,6 +398,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   align-items: flex-start;
   margin-top: -100px;
+}
+
+.form-section{
+    height: 20rem;
 }
 
 }
