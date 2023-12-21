@@ -274,7 +274,6 @@ footer{
   padding: 20px;
   text-align: center;
   width: 90%;
-  margin: auto;
 }
 footer p{
   font-weight:bold;
@@ -285,10 +284,14 @@ footer span a{
   text-decoration: underline;
 }
 
+.one{
+  display:none;
+}
+
 
 /***Form Styling****/
 
-.first-name-section, .last-name-section, .height-section,.weight-section,
+.last-name-section, .first-name-section, .height-section,.weight-section,
 .activity-section, .password-section, .gender-section, .dob-section
 {
   display: flex;
@@ -318,9 +321,8 @@ width: 100%;
 
 
 input, select{
-  width: 24.58333rem;
+width: 24.58333rem;
 height: 4rem;
-flex-shrink: 0;
 border: 1px solid rgba(0, 0, 0, .5);
 text-indent: 10px;
 }
@@ -350,3 +352,55 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /*Media Query for Desktop Designs ***/
+
+@media only screen and (min-width: 900px) {
+
+  .container{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .two{
+    display: none;
+  }
+
+  .one{
+    display: block;
+  }
+
+ 
+
+
+
+
+ 
+  /**form styles***/
+
+  .name-wrapper, .gender-dates-wrapper, .measurements-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+.activity-section select, .password-section input, .register-button{
+  width: 52rem;
+}
+
+/***logo-section**/
+
+.logo-section img{
+  width: 100px;
+  height: 100px;
+}
+
+.logo-section{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -100px;
+}
+
+}
